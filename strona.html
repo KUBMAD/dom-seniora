@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Pracy - Dom Spokojnej Starości "Przystań"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Dom Spokojnej Starości "Przystań"</h1>
+            <p>Dołącz do naszego zespołu – Oferty Pracy</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="card grid-2">
+            <div>
+                <h2>O nas</h2>
+                <p>Poszukujemy empatycznych i odpowiedzialnych osób do opieki nad naszymi seniorami. Oferujemy stabilne zatrudnienie, profesjonalny sprzęt i przyjazną atmosferę w pracy.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Opieka nad seniorem">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Kogo poszukujemy?</h2>
+            <div class="grid-3">
+                <div class="box-item">
+                    <h3>🩺 Pielęgniarka / Pielęgniarz</h3>
+                    <p>Wykształcenie kierunkowe, podawanie leków oraz bieżąca opieka medyczna nad pacjentami.</p>
+                </div>
+                <div class="box-item">
+                    <h3>🤝 Opiekun / Opiekunka</h3>
+                    <p>Pomoc seniorom w codziennych czynnościach, higienie oraz wsparcie emocjonalne.</p>
+                </div>
+                <div class="box-item">
+                    <h3>🏃 Fizjoterapeuta</h3>
+                    <p>Prowadzenie ćwiczeń rehabilitacyjnych i aktywizacja ruchowa podopiecznych.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card highlight">
+            <h2>Co oferujemy?</h2>
+            <ul>
+                <li>✔ Umowa o pracę</li>
+                <li>✔ Atrakcyjne wynagrodzenie i system premiowy</li>
+                <li>✔ Elastyczny grafik (praca w systemie zmianowym)</li>
+                <li>✔ Szkolenia i możliwość rozwoju zawodowego</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Nasza Placówka</h2>
+            <div class="gallery">
+                <img src="dom.png" alt="Dom">
+                <img src="spokojnej.png" alt="Spokojnej">
+                <img src="starości.png" alt="Starości">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Formularz Zgłoszeniowy</h2>
+            <form action="https://formsubmit.co/informatykcmg@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nowa aplikacja o pracę - Dom Spokojnej Starości">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="name">Imię i Nazwisko *</label>
+                    <input type="text" id="name" name="Imię i Nazwisko" required placeholder="Jan Kowalski">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="Email" required placeholder="jan@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon *</label>
+                    <input type="tel" id="phone" name="Telefon" required placeholder="123 456 789">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Stanowisko *</label>
+                    <select id="position" name="Stanowisko" required>
+                        <option value="Opiekun">Opiekun / Opiekunka</option>
+                        <option value="Pielęgniarz">Pielęgniarz / Pielęgniarka</option>
+                        <option value="Fizjoterapeuta">Fizjoterapeuta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg">Wiadomość / Doświadczenie</label>
+                    <textarea id="msg" name="Wiadomosc" rows="4" placeholder="Krótki opis doświadczenia..."></textarea>
+                </div>
+
+                <button type="submit">Wyślij aplikację</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Dom Spokojnej Starości "Przystań" | Kontakt: <a href="mailto:informatykcmg@gmail.com">informatykcmg@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

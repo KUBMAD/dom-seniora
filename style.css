@@ -1,0 +1,87 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    background: #f7fafc;
+    color: #2d3748;
+}
+
+.container { width: 90%; max-width: 960px; margin: auto; }
+
+header { background: #2c5282; color: #fff; text-align: center; padding: 30px 0; }
+header h1 { font-size: 2rem; margin-bottom: 5px; }
+
+footer { background: #1a202c; color: #a0aec0; text-align: center; padding: 20px 0; margin-top: 30px; }
+footer a { color: #f6ad55; text-decoration: none; }
+
+.card {
+    background: #fff;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #2c5282;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
+
+.box-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 6px; }
+.box-item h3 { color: #2c5282; margin-bottom: 8px; }
+
+.highlight { background: #f0fff4; border-left: 5px solid #38a169; }
+.highlight ul { list-style: none; }
+.highlight li { padding: 4px 0; }
+
+img { width: 100%; border-radius: 6px; display: block; }
+
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery img { height: 180px; object-fit: cover; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2c5282;
+}
+
+button {
+    background: #38a169;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button:hover { background: #2f855a; }
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .gallery { grid-template-columns: 1fr; }
+}
